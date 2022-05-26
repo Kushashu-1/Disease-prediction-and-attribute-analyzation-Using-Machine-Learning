@@ -256,6 +256,7 @@ else :
 
 #---------------------------------------------Heart-----------------------------------------------------#
         elif selected_dataset == 'Cardiovascular Disease dataset':
+            st.write("This DataSet is Larger In Size , It will take Fews Seconds")
             df = pd.read_csv('data/CardioT.csv')
             df['target'] = df.cardio
             if 'Scatter Matrix' in plots:
