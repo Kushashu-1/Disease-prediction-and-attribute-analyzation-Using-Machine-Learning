@@ -11,7 +11,7 @@ We approached this project to learn about the Core Concept of the Machine learni
 
 
 ## Aim of Project 
-   Aim of the Project is to Analyse Differnt parameters of various Disease datasets and analyzes the data to provides prediction of Disease using different algorithm and also computes  accuracy for the various classification algorithms used i.e 
+   Aim of the Project is to Analyse Different parameters of various Disease datasets and analyzes the data to provides prediction of Disease using different algorithm and also computes  accuracy for the various classification algorithms used i.e 
 ### 1. Logistic Regression
 ### 2. Random Forest 
 ### 3. K-Nearest Neighbor
