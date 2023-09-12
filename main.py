@@ -68,7 +68,7 @@ elif page == 'Home':
     elif selected_dataset == 'Cardiovascular Disease dataset':
         df = pd.read_csv('data/CardioT.csv')
     elif selected_dataset == 'Breast Cancer Dataset':
-        df = pd.read_csv('data\Breast_cancer_data.csv')
+        df = pd.read_csv('data/Breast_cancer_data.csv')
 
     st.subheader('Dataset Preview')
     st.write(df.head(5))
