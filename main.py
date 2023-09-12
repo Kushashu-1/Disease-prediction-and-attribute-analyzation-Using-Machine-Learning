@@ -247,7 +247,7 @@ else:
             st.write("Large Dataset ")
             df = pd.read_csv('data/CardioT.csv')
             df['target'] = df.cardio
-            df.iteritems = df.items
+            df['iteritems'] = df.items
             if 'Scatter Matrix' in plots:
                 st.subheader("Scatter Matrix")
                 fig = px.scatter_matrix(df, dimensions=[
