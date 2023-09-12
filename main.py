@@ -166,7 +166,7 @@ else:
     if st.button("Plot", key='Graphs'):
         if selected_dataset == 'Breast Cancer Dataset':
             df = pd.read_csv('data/Breast_cancer_data.csv')
-
+            df.iteritems = df.items
             if 'Number of Malignant and Benign' in plots:
                 st.subheader("Malignant and Benign Count")
                 fig, ax = plt.subplots()
@@ -215,6 +215,7 @@ else:
 
         elif selected_dataset == 'Diabetes Dataset':
             df = pd.read_csv('data/diabetes.csv')
+            df.iteritems = df.items
             if 'Scatter Matrix' in plots:
                 st.subheader("Scatter Matrix")
                 fig = px.scatter_matrix(df, dimensions=[
@@ -246,6 +247,7 @@ else:
             st.write("Large Dataset ")
             df = pd.read_csv('data/CardioT.csv')
             df['target'] = df.cardio
+            df.iteritems = df.items
             if 'Scatter Matrix' in plots:
                 st.subheader("Scatter Matrix")
                 fig = px.scatter_matrix(df, dimensions=[
