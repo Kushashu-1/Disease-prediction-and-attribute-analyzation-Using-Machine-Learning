@@ -7,11 +7,11 @@ Project is Deployed at StreamlitCloud : [click here](https://kushashu-1-disease-
 
 
 ## Introduction 
-We approached this project to learn about the Core Concept of the Machine learning environment With this in mind,first we learned about different datasets and algorithms of Machine learning. This project is one of my starters project in this domain and with it I am able to experience not only life of an Enginner but a Physican as well.
+I approached this project to learn about the Core Concept of Machine learning environment Under the Guidance : Dr. Rohit Gupta Sir . With this in mind,I have learned Machine Learing project lifecycle .Studied about different datasets and algorithms of Machine learning and also got idea how different values of parameter effects performance of Algorithm . For Better User Interface experience and designs I taken help of Streamlit.io which is open source app framework which supports Python language.
 
 
 ## Aim of Project 
-   Aim of the Project is to Analyse Different parameters of various Disease datasets and analyzes the data to provides prediction of Disease using different algorithm and also computes  accuracy for the various classification algorithms used i.e 
+   Aim of the Project is to Analyse Different parameters of various Disease datasets and analyzes the data to provides prediction of Disease using different algorithm and also computes accuracy for the various classification algorithms used i.e 
 ### 1. Logistic Regression
 ### 2. Random Forest 
 ### 3. K-Nearest Neighbor
