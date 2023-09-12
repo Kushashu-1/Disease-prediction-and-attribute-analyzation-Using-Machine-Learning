@@ -153,13 +153,12 @@ else:
 
     options_list = []
     if selected_dataset == 'Diabetes Dataset':
-        options_list = ['Scatter Matrix',
-                        'Age Vs Glucose', 'Insulin Vs BMI', 'Heatmap']
+        options_list = ['Age Vs Glucose', 'Insulin Vs BMI', 'Heatmap']
     elif selected_dataset == 'Breast Cancer Dataset':
-        options_list = ['Scatter Matrix', 'Number of Malignant and Benign',
+        options_list = [ 'Number of Malignant and Benign',
                         'Heatmap', 'Mean smoothness vs Mean area']
     elif selected_dataset == 'Cardiovascular Disease dataset':
-        options_list = ['Scatter Matrix', 'Age Vs Systolic blood pressure',
+        options_list = [ 'Age Vs Systolic blood pressure',
                         'Diastolic blood pressure Vs Alcohol intake', 'Heatmap']
 
     plots = st.multiselect("Graphical Representation", options_list)
@@ -191,12 +190,6 @@ else:
                 ax.yaxis.set_tick_params(length=0)
                 st.pyplot(fig)
 
-            if 'Scatter Matrix' in plots:
-                st.subheader("Scatter Matrix")
-                fig = px.scatter_matrix(df, dimensions=[
-                                        'radius_mean', 'texture_mean', 'perimeter_mean', 'radius_worst', 'texture_worst', 'perimeter_worst'], color="diagnosis", width=800, height=700)
-                st.write(fig)
-
             if 'Heatmap' in plots:
                 st.subheader("Heatmap")
                 fig = plt.figure(figsize=(30, 20))
@@ -215,12 +208,6 @@ else:
 
         elif selected_dataset == 'Diabetes Dataset':
             df = pd.read_csv('data/diabetes.csv')
-            df.iteritems = df.items
-            if 'Scatter Matrix' in plots:
-                st.subheader("Scatter Matrix")
-                fig = px.scatter_matrix(df, dimensions=[
-                                        'Pregnancies', 'Glucose', 'BMI', 'target'], color="target", width=800, height=700)
-                st.write(fig)
             if 'Age Vs Glucose' in plots:
                 st.subheader("Age Vs Glucose")
                 fig = plt.figure()
@@ -247,13 +234,6 @@ else:
             st.write("Large Dataset ")
             df = pd.read_csv('data/CardioT.csv')
             df['target'] = df.cardio
-            df['iteritems'] = df.items
-            if 'Scatter Matrix' in plots:
-                st.subheader("Scatter Matrix")
-                fig = px.scatter_matrix(df, dimensions=[
-                                        'age', 'height', 'ap_hi', 'cholesterol', 'gluc', 'smoke', 'target'], color="target", width=800, height=700)
-                st.write(fig)
-
             if 'Age Vs Systolic blood pressure' in plots:
                 st.subheader("Age Vs Systolic blood pressure")
                 fig = plt.figure()
