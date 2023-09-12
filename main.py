@@ -64,7 +64,7 @@ elif page == 'Home':
     selected_classifier = st.selectbox(
         'Classifier', ('K Nearest Neighbor (KNN)', 'Logistic Regression', 'Random Forest'))
     if selected_dataset == 'Diabetes Dataset':
-        df = pd.read_csv('data\diabetes.csv')
+        df = pd.read_csv('data/diabetes.csv')
     elif selected_dataset == 'Cardiovascular Disease dataset':
         df = pd.read_csv('data/CardioT.csv')
     elif selected_dataset == 'Breast Cancer Dataset':
